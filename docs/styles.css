@@ -5,6 +5,16 @@
   color:white;
 }
 
+.pull-left {
+  float: left;
+  width: 48%;
+}
+.pull-right {
+  float: right;
+  width: 48%;
+}
+
 #quarto-content {
   background-color: #1f1f1f;
 }
+

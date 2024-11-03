@@ -1,7 +1,48 @@
 ---
-title: "RuhrMetrics Reading-Group"
-subtitle: ""
+title: ""
+subtitle: "RuhrMetrics Reading-Group"
 ---
+
+```{r setup, inculde = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
+source('packages.R')
+schedule <- readxl::read_xlsx('data/schedule.xlsx')
+
+schedule %<>%
+  dplyr::mutate(Date = lubridate::as_date(Date))
+```
+
+
+## Location
+
+All meetings (for the time being) will be held in the University of Essen in room [R12
+R06 A48](https://www.uni-due.de/de/universitaet/gebaeude_essen_r12r.php).
+
+```{r map, out.width='95%', fig.height = 2.5, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(7.008403713908398, 51.46402372535478, zoom = 16.25) %>%
+  addPopups(7.008403713908398, 51.46402372535478, '<b>Econometric Chair',
+            options = popupOptions(closeButton = FALSE)
+  )
+```
+
+```{r lageplan, eval = FALSE, out.width='48%', fig.height = 2.5, fig.align = 'center', echo=FALSE, inculde = FALSE}
+knitr::include_graphics("data/lageplan.jpg")
+```
+
+## Schedule 
+
+```{r DT Schedule, echo = FALSE}
+
+DT::datatable(
+  schedule, 
+  style = 'bootstrap', rownames = FALSE, escape = FALSE) %>%
+  DT::formatStyle(columns = c(1, 2, 3), fontSize = '50%')
+
+#  fillContainer = FALSE, options = list(pageLength = 8)
+```
+
+
+
 
 ## Contacts
 
