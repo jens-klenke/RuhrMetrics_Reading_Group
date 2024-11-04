@@ -23,3 +23,19 @@
   width: 48vw;
   flex-wrap: wrap;
 }
+
+.dataTables_wrapper{
+  font-size: 8pt !important;
+}
+
+.form-control {
+  font-size: 8pt !important;
+  padding-top: 0.1rem !important;
+  padding-right: 0.5rem !important;
+  padding-bottom: 0.1rem !important;
+  padding-left: 0.5rem !important;
+  background-color: #3c3c3c !important;
+  border-color: #000000 !important;
+  color: #fff !important;
+}
+

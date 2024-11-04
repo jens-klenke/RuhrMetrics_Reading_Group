@@ -13,8 +13,7 @@ schedule %<>%
 
 ## Next Meeting
 
-The next Meeting will be on November 14th 2024 at the University of Essen in room [R12
-R06 A48](#location). In the session we will talk about the paper<a href = "paper/Rambachan_timeseries_causal_nonparametric.pdf" download="Rambachan_timeseries_causal_nonparametric.pdf">When Do Common Time Series Estimands Have Nonparametric Causal Meaning?</a>. Christian Schulz will start the session with a small presentation (around 20 minutes) to introduce the topic for the later discussion.
+The next meeting is scheduled for __November 14, 2024__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _When Do Common Time Series Estimands Have Nonparametric Causal Meaning?_ (<a href = "paper/Rambachan_timeseries_causal_nonparametric.pdf" download="Rambachan_timeseries_causal_nonparametric.pdf">Rambachan and Shephard, 2021</a>). To start, __Christian Schulz__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
 
 ## Schedule 
 
@@ -22,8 +21,8 @@ R06 A48](#location). In the session we will talk about the paper<a href = "paper
 
 DT::datatable(
   schedule, 
-  style = 'bootstrap', rownames = FALSE, escape = FALSE) %>%
-  DT::formatStyle(columns = c(1, 2, 3), fontSize = '50%')
+  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>% 
+  DT::formatStyle(columns = c(1, 2, 3), fontSize = '80%')
 
 #  fillContainer = FALSE, options = list(pageLength = 8)
 ```
@@ -33,10 +32,12 @@ DT::datatable(
 All meetings (for the time being) will be held in the University of Essen in room [R12
 R06 A48](https://www.uni-due.de/de/universitaet/gebaeude_essen_r12r.php).
 
-```{r map, out.width='95%', fig.height = 2.5, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
+```{r map, out.width='95%', fig.height = 3, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
 library(leaflet)
-leaflet() %>% addTiles() %>% setView(7.008403713908398, 51.46402372535478, zoom = 16.25) %>%
-  addPopups(7.008403713908398, 51.46402372535478, '<b>Econometric Chair',
+leaflet() %>% addTiles() %>% setView(7.01, 51.4615, zoom = 15.5) %>%
+  addPopups(7.008403713908398, 51.46402372535478, "<div style='font-size:10px;text-align:center;'><b>Econometric Chair</b></div>",
+            options = popupOptions(closeButton = FALSE)) %>%
+  addPopups(7.01184457102775, 51.46221477005451, "<div style='font-size:10px;text-align:center;'><b>Subway station</b></div> <div style='font-size:8px;text-align:center;'>Rheinischer Platz</div>",
             options = popupOptions(closeButton = FALSE)
   )
 ```
@@ -44,6 +45,10 @@ leaflet() %>% addTiles() %>% setView(7.008403713908398, 51.46402372535478, zoom 
 ```{r lageplan, eval = FALSE, out.width='48%', fig.height = 2.5, fig.align = 'center', echo=FALSE, inculde = FALSE}
 knitr::include_graphics("data/lageplan.jpg")
 ```
+
+<br>
+For those not familiar with the numbering system, R12 is the entrance number to the red building, R06 means to take the red elevator to the sixth floor and A48 is room 48 in hallway A. 
+
 
 
 ## Contacts
