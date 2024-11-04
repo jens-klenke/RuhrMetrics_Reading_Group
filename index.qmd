@@ -21,8 +21,13 @@ The next meeting is scheduled for __November 14, 2024__, at the University of Es
 
 DT::datatable(
   schedule, 
-  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>% 
-  DT::formatStyle(columns = c(1, 2, 3), fontSize = '80%')
+  options = list(
+    columnDefs = list(
+      list(width = '60px', targets = 0)  # Set width for the first column
+      )
+    ),
+  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
+  DT::formatStyle(columns = c(1), fontSize = '90%')
 
 #  fillContainer = FALSE, options = list(pageLength = 8)
 ```
@@ -35,9 +40,9 @@ R06 A48](https://www.uni-due.de/de/universitaet/gebaeude_essen_r12r.php).
 ```{r map, out.width='95%', fig.height = 3, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(7.01, 51.4615, zoom = 15.5) %>%
-  addPopups(7.008403713908398, 51.46402372535478, "<div style='font-size:10px;text-align:center;'><b>Econometric Chair</b></div>",
+  addPopups(7.008403713908398, 51.46402372535478, "<div style='font-size:12px;text-align:center;'><b>Econometric Chair</b></div>",
             options = popupOptions(closeButton = FALSE)) %>%
-  addPopups(7.01184457102775, 51.46221477005451, "<div style='font-size:10px;text-align:center;'><b>Subway station</b></div> <div style='font-size:8px;text-align:center;'>Rheinischer Platz</div>",
+  addPopups(7.01184457102775, 51.46221477005451, "<div style='font-size:12px;text-align:center;'><b>Subway station</b></div> <div style='font-size:10px;text-align:center;'>Rheinischer Platz</div>",
             options = popupOptions(closeButton = FALSE)
   )
 ```
