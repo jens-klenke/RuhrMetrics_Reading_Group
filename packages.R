@@ -10,5 +10,6 @@ pacman::p_load(
   tidyr,
   readxl,
   lubridate,
-  kableExtra
+  kableExtra,
+  hms
 )

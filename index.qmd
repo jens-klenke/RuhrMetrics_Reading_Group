@@ -9,6 +9,9 @@ schedule <- readxl::read_xlsx('data/schedule.xlsx')
 
 schedule %<>%
   dplyr::mutate(Date = lubridate::as_date(Date))
+
+schedule %<>% dplyr::mutate(Time = hms::as_hms(Time))
+
 ```
 
 ## Next Meeting
