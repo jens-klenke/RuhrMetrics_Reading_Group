@@ -10,8 +10,6 @@ schedule <- readxl::read_xlsx('data/schedule.xlsx')
 schedule %<>%
   dplyr::mutate(Date = lubridate::as_date(Date))
 
-schedule %<>% dplyr::mutate(Time = hms::as_hms(Time))
-
 ```
 
 ## Next Meeting
@@ -30,7 +28,7 @@ DT::datatable(
       )
     ),
   style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
-  DT::formatStyle(columns = c(1), fontSize = '90%')
+  DT::formatStyle(columns = c(1, 2), fontSize = '90%')
 
 #  fillContainer = FALSE, options = list(pageLength = 8)
 ```
@@ -38,7 +36,7 @@ DT::datatable(
 ## Location
 
 All meetings (for the time being) will be held in the University of Essen in room [R12
-R06 A48](https://www.uni-due.de/de/universitaet/gebaeude_essen_r12r.php).
+R06 A48](https://www.wiwi.uni-due.de/organisation/gebaeude/r12r06a/).
 
 ```{r map, out.width='95%', fig.height = 3, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
 library(leaflet)
@@ -50,7 +48,7 @@ leaflet() %>% addTiles() %>% setView(7.01, 51.4615, zoom = 15.5) %>%
   )
 ```
 
-```{r lageplan, eval = FALSE, out.width='48%', fig.height = 2.5, fig.align = 'center', echo=FALSE, inculde = FALSE}
+```{r lageplan, out.width='48%', fig.height = 2.5, fig.align = 'center', echo=FALSE, include = FALSE}
 knitr::include_graphics("data/lageplan.jpg")
 ```
 
