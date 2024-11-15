@@ -1,5 +1,5 @@
 ---
-title: "RuhrMetrics Reading-Group"
+title: "RuhrMetrics Reading Group"
 subtitle: ""
 ---
 
@@ -10,11 +10,13 @@ schedule <- readxl::read_xlsx('data/schedule.xlsx')
 schedule %<>%
   dplyr::mutate(Date = lubridate::as_date(Date))
 
+file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
+
 ```
 
 ## Next Meeting
 
-The next meeting is scheduled for __November 14, 2024__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _When Do Common Time Series Estimands Have Nonparametric Causal Meaning?_ (<a href = "paper/Rambachan_timeseries_causal_nonparametric.pdf" download="Rambachan_timeseries_causal_nonparametric.pdf">Rambachan and Shephard, 2021</a>). To start, __Christian Schulz__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
+The next meeting is scheduled for __December 12, 2024__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Macroeconomics and Reality_ (<a href = "paper/Sims_marcoeconomics_and_reality.pdf" download="Sims_marcoeconomics_and_reality.pdf">Sims, 1980</a>). To start, __Ignacio Moreira Lara__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
 
 ## Schedule 
 
@@ -24,7 +26,8 @@ DT::datatable(
   schedule, 
   options = list(
     columnDefs = list(
-      list(width = '60px', targets = 0)  # Set width for the first column
+      list(width = '60px', targets = 0),  # Set width for the first column
+      list(className = 'dt-center', targets = 4)
       )
     ),
   style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
@@ -59,7 +62,7 @@ For those not familiar with the numbering system, R12 is the entrance number to 
 
 ## Contacts
 
-If you have any question you can contact either Christian or Ignacio.
+If you have any question,  you can contact either Christian or Ignacio.
 
 - [Christian Schulz](mailto:christian.schulz@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
 - [Ignacio Moreira Lara](mailto:Ignacio.moreira-lara@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
