@@ -16,7 +16,7 @@ file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
 
 ## Next Meeting
 
-The next meeting is scheduled for __December 12, 2024__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Macroeconomics and Reality_ (<a href = "paper/Sims_marcoeconomics_and_reality.pdf" download="Sims_marcoeconomics_and_reality.pdf">Sims, 1980</a>). To start, __Ignacio Moreira Lara__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
+The next meeting is scheduled for __January 9, 2025__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Autoregressive models for matrix-valued time series_ (<a href = "paper/Chen_Autoregressive_models_for_matrix-valued_time_series.pdf" download="Chen_Autoregressive_models_for_matrix-valued_time_series.pdf">Chen, 2021</a>). To start, __Antonio Fioravanti__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
 
 ## Schedule 
 

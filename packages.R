@@ -11,6 +11,7 @@ pacman::p_load(
   readxl,
   lubridate,
   kableExtra,
+  markdown,
   hms
 )
 
