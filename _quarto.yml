@@ -24,3 +24,7 @@ format:
 
 editor: source
 
+resources:
+  - sources
+  - presentations
+  - papers
