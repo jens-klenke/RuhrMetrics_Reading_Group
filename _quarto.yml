@@ -15,6 +15,13 @@ website:
   page-footer:
     center: "Built using <a href='https://quarto.org'>Quarto</a> &centerdot; Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0/'>CC BY-SA 4.0</a>"
   open-graph: true
+  twitter-card: true
+  
+metadata:
+  description: "A website for the PhD Reading Group of the RuhrMetrics program."
+  keywords: "RQuarto, R Markdown, PhD, RuhrMetrics, RuhrMetrics Reading Group"
+  author: "Jens Klenke"
+  robots: "index, follow"
   
 format:
   html:

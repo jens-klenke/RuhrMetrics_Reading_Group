@@ -16,8 +16,8 @@ file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
 
 ## Next Meeting
 
-The next meeting is scheduled for __January 23, 2025__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Generalized additive models for location, scale
-and shape_ (<a href = "paper/Rigby-Generalized_additive_models_for_location_scale_and_shape.pdf" download="Rigby-Generalized_additive_models_for_location_scale_and_shape.pdf">Rigby and Stasinopoulos, 2005</a>). To start, __Simon Hirsch__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
+The next meeting is scheduled for __February 20, 2025__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Bayesian Nonparametric Modeling for Causal
+Inference (<a href = "paper/Hill_Bayesian_Nonparametric_Modeling_for_Causal_Inference.pdf" download="Hill_Bayesian_Nonparametric_Modeling_for_Causal_Inference.pdf">Hill, 2011</a>). To start, __Lennard Maßmann and Jens Klenke__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
 
 ## Schedule 
 
