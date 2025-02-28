@@ -18,9 +18,9 @@ website:
   twitter-card: true
   
 metadata:
-  description: "A website for the PhD Reading Group of the RuhrMetrics program."
+  description: ""
   keywords: "RQuarto, R Markdown, PhD, RuhrMetrics, RuhrMetrics Reading Group"
-  author: "Jens Klenke"
+  authors: "Jens Klenke, Ignacio Moreira Lara and Christian Schulz"
   robots: "index, follow"
   
 format:
