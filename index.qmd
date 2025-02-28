@@ -14,12 +14,18 @@ file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
 
 ```
 
-## Next Meeting
+## Description
+Welcome to the website of the RuhrMetrics reading group! The objective of the reading group is to create a place of exchange for all econometrics enthusiasts. We intend to read papers that appeal to the average econometric practitioner. Our goal is to read papers that are groundbreaking and seminal in the field, be it the classic VAR Sims (1980) paper or a similar classic such as the GAMLSS paper from Rigby & Stasinopoulos (2005).
 
-The next meeting is scheduled for __February 20, 2025__, at the University of Essen, room [R12 R06 A48](#location). We’ll be discussing the paper _Bayesian Nonparametric Modeling for Causal
-Inference (<a href = "paper/Hill_Bayesian_Nonparametric_Modeling_for_Causal_Inference.pdf" download="Hill_Bayesian_Nonparametric_Modeling_for_Causal_Inference.pdf">Hill, 2011</a>). To start, __Lennard Maßmann and Jens Klenke__ will give a brief 20-minute presentation to introduce the topic and set the stage for discussion.
 
-## Schedule 
+Before each semester we kindly ask new participants to suggest papers for the group. Then the selection of papers are "curated" and assigned to possible dates of the reading group. For each session we select a paper that should be read beforehand. Then, in the session the person that suggested the paper gives 20 min presentation with the key insights from the paper. Discussion takes place either during or after the presentation. Altogether the meeting lasts 60min. Afterwards, we have the tradition to go out for dinner altogether were the discussion takes new directions into either socializing with new people or into new research topics.
+
+
+## Next Sessions
+
+Thank you all participants from the last semester. We are currently working on the schedule of the next sessions!
+
+## Schedule from Winter Semester 24/25 
 
 ```{r DT Schedule, echo = FALSE}
 
