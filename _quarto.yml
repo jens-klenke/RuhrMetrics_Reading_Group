@@ -5,6 +5,9 @@ project:
 website:
   title: "RuhrMetrics Reading Group"
   navbar:
+    left: 
+      - href: SoSe2025.qmd
+        text: "SoSe2025"
     right:
       - icon: github
         href: https://github.com/jens-klenke
