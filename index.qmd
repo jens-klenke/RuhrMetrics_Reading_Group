@@ -22,7 +22,41 @@ Before each semester we kindly ask new participants to suggest papers for the gr
 
 ## Next Sessions
 
-Thank you all participants from the last semester. We are currently working on the schedule of the next sessions!
+Thank you all participants from the last semester. Please take a look at the tab above in order to express your interest for the upcoming semester.
+
+## Paper suggestions
+```{rt, echo = FALSE}
+<form id="submissionForm">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="suggestion">Paper Suggestion:</label><br>
+  <textarea id="suggestion" name="suggestion" required></textarea><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<p id="responseMessage"></p>
+
+<script>
+document.getElementById("submissionForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    let formData = new FormData(this);
+
+    fetch("save_submission", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("responseMessage").innerText = data;
+    })
+    .catch(error => console.error("Error:", error));
+});
+</script>
+
+```
 
 ## Schedule from Winter Semester 24/25 
 
