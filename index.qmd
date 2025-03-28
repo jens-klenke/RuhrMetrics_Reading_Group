@@ -5,7 +5,10 @@ subtitle: ""
 
 ```{r setup, inculde = FALSE, echo = FALSE, message = FALSE, warning = FALSE}
 source('packages.R')
+schedule_old <- readxl::read_xlsx('data/schedule_old.xlsx')
+
 schedule <- readxl::read_xlsx('data/schedule.xlsx')
+
 
 schedule %<>%
   dplyr::mutate(Date = lubridate::as_date(Date))
@@ -21,45 +24,8 @@ Before each semester we kindly ask new participants to suggest papers for the gr
 
 We welcome PhD students, Professors, Post-docs or master students in our sessions. The level of econometric or statistic knowledge is not a pre-requisite, only your interest in the field is what matters. Regular attendance is not required but highly encouraged.
 
-## Next Sessions
-
-Thank you all participants from the last semester. Please take a look at the tab above in order to express your interest for the upcoming semester.
-
-## Paper suggestions
-```{rt, echo = FALSE}
-<form id="submissionForm">
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <label for="suggestion">Paper Suggestion:</label><br>
-  <textarea id="suggestion" name="suggestion" required></textarea><br><br>
-
-  <button type="submit">Submit</button>
-</form>
-
-<p id="responseMessage"></p>
-
-<script>
-document.getElementById("submissionForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    let formData = new FormData(this);
-
-    fetch("save_submission", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("responseMessage").innerText = data;
-    })
-    .catch(error => console.error("Error:", error));
-});
-</script>
-
-```
-
-## Schedule from Winter Semester 24/25 
+## Schedule Summer Semester 2025
+Below you can find the information on the upcoming sessions.
 
 ```{r DT Schedule, echo = FALSE}
 
@@ -76,6 +42,7 @@ DT::datatable(
 
 #  fillContainer = FALSE, options = list(pageLength = 8)
 ```
+
 
 ## Location
 
@@ -101,9 +68,65 @@ For those not familiar with the numbering system, R12 is the entrance number to 
 
 
 
+<!-- ## Paper suggestions -->
+<!-- ```{rt, echo = FALSE} -->
+<!-- <form id="submissionForm"> -->
+<!--   <label for="email">Email:</label><br> -->
+<!--   <input type="email" id="email" name="email" required><br><br> -->
+
+<!--   <label for="suggestion">Paper Suggestion:</label><br> -->
+<!--   <textarea id="suggestion" name="suggestion" required></textarea><br><br> -->
+
+<!--   <button type="submit">Submit</button> -->
+<!-- </form> -->
+
+<!-- <p id="responseMessage"></p> -->
+
+<!-- <script> -->
+<!-- document.getElementById("submissionForm").addEventListener("submit", function(event) { -->
+<!--     event.preventDefault(); -->
+
+<!--     let formData = new FormData(this); -->
+
+<!--     fetch("save_submission", { -->
+<!--         method: "POST", -->
+<!--         body: formData -->
+<!--     }) -->
+<!--     .then(response => response.text()) -->
+<!--     .then(data => { -->
+<!--         document.getElementById("responseMessage").innerText = data; -->
+<!--     }) -->
+<!--     .catch(error => console.error("Error:", error)); -->
+<!-- }); -->
+<!-- </script> -->
+
+<!-- ``` -->
+
+
+
 ## Contacts
 
 If you have any question,  you can contact either Christian or Ignacio.
 
 - [Christian Schulz](mailto:christian.schulz@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
 - [Ignacio Moreira Lara](mailto:Ignacio.moreira-lara@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
+
+## Papers and presentations from Winter Semester 24/25 
+
+```{r Past schedule, echo = FALSE}
+
+DT::datatable(
+  schedule_old, 
+  options = list(
+    columnDefs = list(
+      list(width = '60px', targets = 0),  # Set width for the first column
+      list(className = 'dt-center', targets = 4)
+      )
+    ),
+  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
+  DT::formatStyle(columns = c(1, 2), fontSize = '90%')
+
+#  fillContainer = FALSE, options = list(pageLength = 8)
+```
+
+
