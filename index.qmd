@@ -120,7 +120,7 @@ DT::datatable(
   options = list(
     columnDefs = list(
       list(width = '60px', targets = 0),  # Set width for the first column
-      list(className = 'dt-center', targets = 4)
+      list(className = 'dt-center', targets = 1)
       )
     ),
   style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
