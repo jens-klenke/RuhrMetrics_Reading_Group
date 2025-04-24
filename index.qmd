@@ -118,8 +118,7 @@ If you have any question,  you can contact either Christian or Ignacio.
 DT::datatable(
   schedule_old, 
   options = list(
-    columnDefs = list(
-      list(width = '60px', targets = 0),  # Set width for the first column
+    columnDefs = list(  # Set width for the first column
       list(className = 'dt-center', targets = 1)
       )
     ),
