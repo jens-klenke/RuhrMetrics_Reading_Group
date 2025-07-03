@@ -11,7 +11,10 @@ schedule <- readxl::read_xlsx('data/schedule.xlsx')
 
 
 schedule %<>%
-  dplyr::mutate(Date = lubridate::as_date(Date))
+  dplyr::mutate(
+    Date = lubridate::as_date(Date) |>                       # keep as Date
+           format("%d-%m-%Y")                                # → "dd-mm-yyyy"
+  )
 
 file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
 
