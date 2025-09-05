@@ -21,38 +21,21 @@ file_icon <- icon_style(icons::fontawesome$solid$file, fill = "#fff")
 ```
 
 ## Description
-<!-- Welcome to the website of the RuhrMetrics reading group! The objective of the reading group is to create a place of exchange for all econometrics enthusiasts. We intend to read papers that appeal to the average econometric practitioner. Our goal is to read papers that are groundbreaking and seminal in the field, be it the classic GAMLSS paper from Rigby & Stasinopoulos (2005) or a recent contribution such as the Matrix Autoregressive models by Chen et al. (2020). -->
 
 Welcome to the website of the RuhrMetrics reading group! The objective of the reading group is to create a place of exchange for all econometrics enthusiasts. We intend to read papers that appeal to the average econometric practitioner. Our goal is to read papers that are groundbreaking and seminal in the field, be it the classic GAMLSS paper from Rigby & Stasinopoulos (2005) or a recent contribution such as the Matrix Autoregressive models by Chen et al. (2020). In every session we have a 20 min presentation of a paper and then discuss the main takeaways. Afterwards, we have the tradition to go out together for dinner were the discussion takes new directions into either socializing with new people or into new research topics. 
 
+## Winter semester 25/26
+We are currently organizing the dates and papers for the next edition of the reading group. In case you would like to participate, we kindly ask you to fill the following registration form:
 
-<!-- Before each semester we kindly ask new participants to suggest papers for the group. Then the selection of papers are "curated" and assigned to possible dates of the reading group. For each session we select a paper that should be read beforehand. Then, in the session the person that suggested the paper gives a 20 min presentation with the key insights from the paper. Discussion takes place either during or after the presentation. Altogether the meeting lasts 60min. Afterwards, we have the tradition to go out together for dinner were the discussion takes new directions into either socializing with new people or into new research topics. -->
-
-<!-- We welcome PhD students, Professors, Post-docs or master students in our sessions. The level of econometric or statistic knowledge is not a pre-requisite, only your interest in the field is what matters. Regular attendance is not required but highly encouraged. -->
-
-## Schedule Summer Semester 2025
-Below you can find the information on the upcoming sessions.
-
-```{r DT Schedule, echo = FALSE}
-
-DT::datatable(
-  schedule, 
-  options = list(
-    columnDefs = list(
-      list(width = '60px', targets = 0),  # Set width for the first column
-      list(className = 'dt-center', targets = 4)
-      )
-    ),
-  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
-  DT::formatStyle(columns = c(1, 2), fontSize = '90%')
-
-#  fillContainer = FALSE, options = list(pageLength = 8)
-```
+# Registration form
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpwGVbCYJTOiHWlloeAR4wQpcbd9FY_oaveO_XvFRbBlR7Yg/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
-## Location
+## Time and location
 
-All meetings (for the time being) will be held in the University of Essen in room [R12
+Given the success of meeting at 5:00 on Thursday during the last semesters, we decided to keep this date as the official time for the sessions.
+
+All sessions will be held in the University of Essen in room [R12
 R06 A48](https://www.wiwi.uni-due.de/organisation/gebaeude/r12r06a/).
 
 ```{r map, out.width='95%', fig.height = 3, fig.align = 'center', eval=require('leaflet'), echo = FALSE}
@@ -116,6 +99,28 @@ If you have any question,  you can contact either Christian or Ignacio.
 
 - [Christian Schulz](mailto:christian.schulz@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
 - [Ignacio Moreira Lara](mailto:Ignacio.moreira-lara@vwl.uni-due.de?subject=Ruhrmetrics%20Reading%20Group)
+
+
+## Schedule Summer Semester 2025
+Below you can find the information on the upcoming sessions.
+
+```{r DT Schedule, echo = FALSE}
+
+DT::datatable(
+  schedule, 
+  options = list(
+    columnDefs = list(
+      list(width = '60px', targets = 0),  # Set width for the first column
+      list(className = 'dt-center', targets = 4)
+      )
+    ),
+  style = 'bootstrap', rownames = FALSE, escape = FALSE)  %>%  
+  DT::formatStyle(columns = c(1, 2), fontSize = '90%')
+
+#  fillContainer = FALSE, options = list(pageLength = 8)
+```
+
+
 
 ## Papers and presentations from Winter Semester 24/25 
 
